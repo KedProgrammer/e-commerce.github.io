@@ -1,1 +1,370 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+
+   
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="css/style9.css">
+
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--nav principal -->
+        <nav class="navbar navbar-inverse  hidden-xs ">
+            <div class="container">
+                <p class="navbar-text navbar-left">E-commerce</p>
+                <p class="navbar-text navbar-right">Salir</p>
+                <p class="navbar-text navbar-right"><img class="carrito" src="img/carrito.png">Carrito</p> 
+            </div>
+        </nav>
+        <!-- nav para resolucion de celular-->
+        <nav class="navbar navbar-collapse navbar-inverse col-xs-12 hidden-sm hidden-md hidden-lg ">
+            <div class="container">
+                <p class="navbar-text navbar-left">E-commerce</p>
+                <a  class="btn btn-primary navbar-text navbar-right " role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img id=brand src="img/hamburger.png">
+                </a>   
+            </div>
+        </nav>
+
+        <div class="collapse" id="collapseExample">
+            <div class="well">
+                <p class="navbar-text navbar-right">Salir</p>
+                <p class="navbar-text navbar-right"><img class="carrito" src="img/carrito.png">Carrito</p> 
+            </div>
+        </div>
+
+        <!--Container principal -->
+        <div class="container">
+        <!--Fila principal , se divide en dos columnas principales -->
+            <div class="row">
+            <!--Primera columna princpial, en resolucion de celular ocupa toda la pantalla, se divide en dos filas -->
+                <div class ="col-xs-12 col-sm-3">
+                    <div class="row search">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="row">
+                    <!--Columna que contiene categorías, en resolucion de tabletas y celular se esconde -->
+                        <div class="col-md-12 hidden-sm hidden-xs">
+                            <p id=categorias>Categorias</p>
+                            <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge">7</span>
+                                    Camisas
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">9</span>
+                                    Tennis
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">5</span>
+                                    Ropa interior
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">3</span>
+                                    Zapatos
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="badge">1</span>
+                                    Trajes elegantes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Segunda columna principal, se divide en varias filas segun la resulucion -->
+                <div class ="col-xs-12 col-md-9">
+                <!-- Fila que contiene el carrusel -->
+                    <div class="row margen">
+                        <div clas="col-xs-12">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="slider" src="img/banner-slider-1.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                        ...
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img class="slider" src="img/banner-slider-2.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                        ...
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img class="slider" src="img/banner-slider-3.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                        ...
+                                        </div>
+                                    </div>
+                                        ...
+                                </div>
+
+                                        <!-- Controls -->
+                                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                     <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Filas que contienen los productos -->
+                    <div class="row productos">
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-1.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camisa estampada de colores</h4>
+                                    <p>Ideal para ti</p>
+                                    <p><a href="#myModal" class="btn btn-default " data-toggle="modal">Detalles</a> <a href="#" class="btn btn-primary" role="button">$1000 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 hidden-xs" >
+                            <div class="thumbnail">
+                                <img src="img/camiseta-2.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada muy linda</h4>
+                                    <p>Ideal para mi</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$2000 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-3.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada no tan linda</h4>
+                                    <p>Ideal para todos¡</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$1 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row productos">
+
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-4.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada</h4>
+                                    <p>Ideal para ricos</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$5000<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-5.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada feita</h4>
+                                    <p>Comprala para estregar</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$0.5 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Estas filas se muestran en resoluciones de celular, para que salgan 2 productos -->
+                    <div class="row productos">
+                        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-1.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada de colores</h4>
+                                    <p>Ideal para ti</p>
+                                    <p><a href="#myModal" class="btn btn-default" data-toggle="modal">Detalles</a> <a href="#" class="btn btn-primary" role="button">$1000 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 hidden-sm hidden-md hidden-lg" >
+                            <div class="thumbnail">
+                                <img src="img/camiseta-2.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada muy linda</h4>
+                                    <p>Ideal para mi</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$2000 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row productos">
+                        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-3.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada no tan linda</h4>
+                                    <p>No tan linda</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$1 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-4.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada </h4>
+                                    <p>Ideal para ricos</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$5000 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="row productos">
+                        <div class="col-xs-6 hidden-sm hidden-md hidden-lg">
+                            <div class="thumbnail">
+                                <img src="img/camiseta-5.jpg" alt="...">
+                                <div class="caption">
+                                    <h4>Camiseta estampada feita</h4>
+                                    <p>Comprala para estregar</p>
+                                    <p><a href="#" class="btn btn-default" role="button">Detalles</a> <a href="#" class="btn btn-primary" role="button">$0.5 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Camisa</h4>
+                    </div>
+                    <!--El modal se divide en varias filas -->
+                        <div class="modal-body">
+                            <!--Fila que muestra la alerta -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="alert alert-info" role="alert">Este producto esta agotado</div>
+                                </div>
+                            </div>
+                            <!-- Esta fila se divide en dos columnas -->
+                            <div class="row">
+                                <!--Columna que muestra la imagen del producto -->
+                                <div class="col-sm-6">
+                                    <a href="#" class="thumbnail">
+                                        <img src="img/camiseta-1.jpg" alt="...">
+                                    </a>
+                                <!--Columna que muestra las demás características -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row "><div class="col-sm-12 modallito">Precio: $1000</div></div>
+                                    <div class="row ">
+                                        <div class="col-sm-12 modallito">
+                                            Calificación:  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="uno">
+                                                <p class="hipster"><b>Hipster</b></p>
+                                            </div>
+                                        </div>
+                                        <div id=columna class="col-sm-4">
+                                            <div class="dos">
+                                                <p class="deportiva"><b id=deporte>Deportiva</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row "><div class="col-sm-12 "><a href=""><p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Agregar a los deseos</p></a></div></div>
+                                </div>
+                            </div>
+                            <!--Esta fila contiene el tab -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div>
+
+                              <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descripción</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Comentarios</a></li>
+                                            </ul>
+
+                            <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">Camiseta ideal para tus dias</div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">
+                                            <div class="panel panel-default productos">
+                                                <div class="panel-heading">
+                                                    <h3 class="panel-title">Daniel Tobon comentó hace 2 días</h3>
+                                                </div>
+                                            <div class="panel-body">
+                                            Que cosa tan fea¡
+                                            </div>
+                                        </div>
+                                            <textarea rows="4" cols="50" name="comment" form="">
+                                            Deja aquí tu comentario...</textarea>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row "><div class="col-sm-4 col-sm-offset-8 productos"><a href="index.html"><button type="button" class="btn btn-default">Cerrar</button></a> <button type="button" class="btn btn-primary">Comprar</button></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/mai.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
 
