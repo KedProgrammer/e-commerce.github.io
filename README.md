@@ -1,2 +1,2 @@
 # KedProgrammer.github.io
-Portafolio de Daniel Tobon Velez
+An e-commerce site built with Bootstrap.
